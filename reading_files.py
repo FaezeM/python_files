@@ -107,13 +107,26 @@ def filtered_word_count(word_count , filter):
 def row_sum(src_str):
     try:
         with open(src_str , "r") as file:
-            matrix = [[int(num) for num in remove_punc(line).split()] for line in file]
-            row_sum = [sum(row) for row in matrix]
-            return row_sum
+            matrix = [[int(num.strip()) for num in line.split(',')] for line in file]
+            new_list = []
+            for row in matrix:
+                new_list += [sum(row)]
+            return new_list
     except FileNotFoundError:
         print("File not found!")
         return []
 
+def mat_min(src_str):
+    try:
+        with open(src_str , "r" , encoding = "utf-8") as file:
+            content = file.read()
+            matrix = [int(num.strip()) for row in content.split('\n') for num in row.split(',') if num.strip()]
+            minimum = min(matrix)
+            return minimum
+    except FileNotFoundError:
+        print("File not found!")
+        return []
+    
                             
 
 #odd_even("numbers.txt")
@@ -122,6 +135,7 @@ def row_sum(src_str):
 #print(double_check(check_line_by_line("programming_languages.txt") , check_whole_string("programming_languages.txt")))
 #print(word_count("programming_languages.txt"))
 #print(filtered_word_count(word_count("programming_languages.txt") , "stopwords_list.txt"))   
-print(row_sum("matrix.txt"))
+#print(row_sum("matrix.txt"))
+print(mat_min("matrix.txt"))
 
 input("Press any key to exit...")
