@@ -1,0 +1,38 @@
+What Is a Programming Language?
+
+When beginning your coding journey, you may find yourself asking, “What exactly is a programming language?” In the video below, we answer this question. Check it out and then read on to learn more about different programming languages and what each is good for.
+
+If you’re new to programming, one of the first things you’ll dive into in our Code Foundations Career Path is defining what programming is:
+
+“Put simply, programming is giving a set of instructions to a computer to execute. If you’ve ever cooked using a recipe before, you can think of yourself as the computer and the recipe’s author as a programmer. The recipe author provides you with a set of instructions which you read and then follow. The more complex the instructions, the more complex the result!”
+
+And programming languages are the tools we use to write instructions for computers to follow. Computers “think” in binary — strings of 1s and 0s. Programming languages allow us to translate the 1s and 0s into something that humans can understand and write. A programming language is made up of a series of symbols that serves as a bridge that allow humans to translate our thoughts into instructions computers can understand.
+
+Low-Level vs. High-Level Programming Languages
+
+Programming languages fall into two different classifications — low-level and high-level.
+
+Low-level programming languages are closer to machine code, or binary. Therefore, they’re more difficult for humans to read (although they’re still easier to understand than 1s and 0s). The benefit of low-level languages is that they’re fast and offer precise control over how the computer will function.
+
+High-level programming languages are closer to how humans communicate. High-level languages use words (like object, order, run, class, request, etc.) that are closer to the words we use in our everyday lives. This means they’re easier to program in than low-level programming languages, although they do take more time to translate into machine code for the computer.
+
+The good news? As computers have become more powerful, the difference in runtime between low-level and high-level programming languages is often only milliseconds. As a result, high-level languages do the trick in most scenarios.
+
+Most popular programming languages
+
+There are tons of programming languages out there that allow you to do all sorts of things, from building virtual reality experiences to creating video games and more. There’s even a programming language that consists entirely of emojis!
+
+In this section, we’ll break down some of the most popular programming languages — and what they’re used for. GitHub’s PYPL Index ranks programming languages according to how often tutorials are searched on Google. The most popular programming languages include the following:
+
+Python: Python is a versatile, general-purpose programming language. It can be used in a variety of fields from data science and machine learning to web development and is a great first language to learn.
+Java: Another language that’s great when you’re starting out, Java can be used for many things, including mobile applications, software development, and large systems development. AP Computer Science is currently taught in Java.
+JavaScript: JavaScript is a front-end and back-end friendly language that enables web applications, game development, and mobile applications.
+C#: C#, Microsoft’s popular programming language, can be used for a wide variety of applications, including game development, enterprise software, video games, mobile apps, and more.
+C++: C++ is one of the most powerful programming languages and is used in a wide range of industries, including VR, software and game development, robotics, and scientific computing.
+PHP: PHP is a widely-used server-side language. It’s a great choice if you’re interested in building dynamic web applications and works well with databases and HTML.
+R: R is a statistical programming language that’s popular among data scientists. It’s used for answering questions with data analysis and creating data visualizations..
+Swift: Swift is Apple’s programming language and is a must if you plan to develop applications for iOS and MacOS.
+Kotlin: Kotlin is an open-source programming language developed by JetBrains. It’s popular for web development, Android development, and more.
+Not sure which programming language to learn first? Check out our free course Learn to Code with Blockly to learn the basics of coding, then our free course Choosing a Programming Language will help you find the best one for you. You can also try our sorting quiz to find out what language fits your personal interests and strengths. Or, get started with our Code Foundations Career Path — an overview course that’ll help you figure out the right path for your unique goals.
+
+# from https://www.codecademy.com/resources/blog/programming-languages/
