@@ -90,12 +90,38 @@ def word_count(src_str):
         print("File not found!")
         return {}
 
-            
+def filtered_word_count(word_count , filter):
+
+    try:
+        with open(filter , "r" , encoding = "utf-8") as filter_file:
+            filters = filter_file.read()
+            filters = remove_punc(filters)
+            filter_words = filters.lower().split()
+            for word in filter_words:
+                del word_count[word]
+            return word_count
+    except FileNotFoundError:
+        print("File not found!")
+        return {}
+
+def row_sum(src_str):
+    try:
+        with open(src_str , "r") as file:
+            matrix = [[int(num) for num in remove_punc(line).split()] for line in file]
+            row_sum = [sum(row) for row in matrix]
+            return row_sum
+    except FileNotFoundError:
+        print("File not found!")
+        return []
+
+                            
 
 #odd_even("numbers.txt")
 #check_line_by_line("programming_languages.txt")
 #check_whole_string("programming_languages.txt")
 #print(double_check(check_line_by_line("programming_languages.txt") , check_whole_string("programming_languages.txt")))
-print(word_count("programming_languages.txt"))
+#print(word_count("programming_languages.txt"))
+#print(filtered_word_count(word_count("programming_languages.txt") , "stopwords_list.txt"))   
+print(row_sum("matrix.txt"))
 
 input("Press any key to exit...")
