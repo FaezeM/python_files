@@ -1,3 +1,6 @@
+import string
+from collections import Counter
+
 def is_even(num):
     if num % 2 == 0:
         return "even"
@@ -55,7 +58,7 @@ def check_whole_string(src_str):
         prog = 0
         with open(src_str , "r" , encoding = "utf-8") as new_file:
 
-            content = new_file.readlines()
+            content = new_file.read()
             for line in content:
 
                 prog += line.count("prog")
@@ -67,11 +70,32 @@ def check_whole_string(src_str):
         print("File not found!")
         return 0
 
+def remove_punc(str):
+    new_str = ""
+    for char in str:
+        if char not in string.punctuation:
+            new_str += char
+    return new_str
+
+def word_count(src_str):
+    
+    try:
+        with open(src_str , "r" , encoding = "utf-8") as file:
+            content = file.read()
+            words = content.lower().split()
+            count = Counter(words)
+        return count
+    
+    except FileNotFoundError:
+        print("File not found!")
+        return {}
+
+            
 
 #odd_even("numbers.txt")
 #check_line_by_line("programming_languages.txt")
 #check_whole_string("programming_languages.txt")
-    
-print(double_check(check_line_by_line("programming_languages.txt") , check_whole_string("programming_languages.txt")))
+#print(double_check(check_line_by_line("programming_languages.txt") , check_whole_string("programming_languages.txt")))
+print(word_count("programming_languages.txt"))
 
 input("Press any key to exit...")
