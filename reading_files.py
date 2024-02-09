@@ -102,7 +102,7 @@ def filtered_word_count(word_count , filter):
             return word_count
     except FileNotFoundError:
         print("File not found!")
-        return {}
+        return
 
 def row_sum(src_str):
     try:
